@@ -16,6 +16,6 @@ class SessionsController < ApplicationController
     p session[:user_id]
     session[:user_id] = nil
     flash[:notice] = "You have been signed out!"
-    redirect_to 'users/index'
+    redirect_to users_path
   end
 end
